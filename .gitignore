@@ -30,3 +30,9 @@ key.properties
 **/android/key.properties
 **/ios/Runner/GeneratedPluginRegistrant.m
 **/ios/Runner/GeneratedPluginRegistrant.h
+
+# ---------------------------------------------------
+# 4. ไฟล์โค้ดที่มี API Key ของโปรเจกต์นี้
+# ---------------------------------------------------
+**/services/weather_service.dart
+**/services/weather_service_dio.dart
