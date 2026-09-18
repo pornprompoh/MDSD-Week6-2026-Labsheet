@@ -1,7 +1,5 @@
 # MDSD Week 6 - API Integration & Networking
 
-คลังเก็บโค้ด (Repository) นี้เป็นส่วนหนึ่งของใบงานปฏิบัติการวิชาการพัฒนาซอฟต์แวร์สำหรับอุปกรณ์เคลื่อนที่ บทที่ 6 โดยมุ่งเน้นที่การเชื่อมต่อแอปพลิเคชัน Flutter กับเครือข่ายภายนอก (REST API) การแปลงข้อมูล JSON และการจัดการสถานะการทำงานแบบ Asynchronous
-
 ## 📁 โครงสร้างของโปรเจกต์
 
 ภายใน Repository นี้ประกอบไปด้วย 2 โปรเจกต์หลักที่อยู่ในโฟลเดอร์ `Lab/`:
@@ -22,26 +20,6 @@
 * **Repository Pattern:** แยกส่วนติดต่อเครือข่าย (Interface/Implementation) ออกจากหน้า UI อย่างเด็ดขาด (`ItemRepository` และ `ItemRepositoryApi`)
 * **Fake Store API:** ดึงรายการสินค้าจำลองจาก REST API จริงมาแสดงบนหน้าจอ
 * **State Management:** ผสานการทำงานร่วมกับแพ็กเกจ `provider` เพื่อจัดการระบบ "ตะกร้าสินค้า" (Cart) ทำให้สามารถเพิ่มหรือลบสินค้าที่ดึงมาจาก API ได้อย่างสมบูรณ์
-
----
-
-## 🚀 ความรู้และเทคโนโลยีที่ใช้ (Tech Stack & Concepts)
-
-* **Flutter & Dart**
-* **http package** (`^1.2.2`) - สำหรับสร้าง HTTP Request พื้นฐาน
-* **dio package** (`^5.7.0`) - ทางเลือกสำหรับการจัดการ Network Request ระดับสูง
-* **provider package** (`^6.1.2`) - สำหรับจัดการ State ของตะกร้าสินค้า
-* **Asynchronous Programming:** `Future`, `async`, `await`
-* **JSON Parsing:** `jsonDecode` และ Factory Constructors (`fromJson`)
-* **Error Handling:** การดักจับ `TimeoutException`, `ClientException`, `FormatException` และ `DioException`
-
----
-
-## 🛠️ ข้อกำหนดเบื้องต้น (Prerequisites)
-
-* ติดตั้ง [Flutter SDK](https://docs.flutter.dev/get-started/install?utm_source=gemini) เวอร์ชันล่าสุด
-* ติดตั้ง IDE เช่น VS Code หรือ Android Studio
-* สมัครบัญชีและรับ API Key ฟรีจาก [OpenWeather](https://openweathermap.org/api?utm_source=gemini)
 
 ---
 
